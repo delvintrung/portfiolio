@@ -4,8 +4,8 @@ import emailjs from "emailjs-com";
 
 export const Contact = () => {
   const [formData, setFormData] = useState({
-    name: "",
-    email: "",
+    from_name: "",
+    email_send: "",
     message: "",
   });
 
@@ -21,7 +21,7 @@ export const Contact = () => {
       )
       .then((result) => {
         alert("Message Sent!");
-        setFormData({ name: "", email: "", message: "" });
+        setFormData({ from_name: "", email_send: "", message: "" });
       })
       .catch(() => alert("Oops! Something went wrong. Please try again."));
   };

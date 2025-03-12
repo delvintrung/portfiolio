@@ -34,7 +34,7 @@ export const Projects = () => {
 
               <div className="flex justify-between items-center">
                 <a
-                  href="#"
+                  href="https://github.com/delvintrung/jsm_banking"
                   className="text-blue-400 hover:text-blue-300 transition-colors my-4"
                 >
                   View Project →
