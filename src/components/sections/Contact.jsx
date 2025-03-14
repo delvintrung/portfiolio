@@ -13,10 +13,10 @@ export const Contact = () => {
     e.preventDefault();
 
     emailjs
-      .sendForm(
+      .send(
         import.meta.env.VITE_SERVICE_ID,
         import.meta.env.VITE_TEMPLATE_ID,
-        e.target,
+        formData,
         import.meta.env.VITE_PUBLIC_KEY
       )
       .then((result) => {
@@ -44,7 +44,7 @@ export const Contact = () => {
                 id="name"
                 name="name"
                 required
-                value={formData.name}
+                value={formData.from_name}
                 className="w-full bg-white/5 border border-white/10 rounded px-4 py-3 text-white transition focus:outline-none focus:border-blue-500 focus:bg-blue-500/5"
                 placeholder="Name..."
                 onChange={(e) =>
@@ -59,7 +59,7 @@ export const Contact = () => {
                 id="email"
                 name="email"
                 required
-                value={formData.email}
+                value={formData.email_send}
                 className="w-full bg-white/5 border border-white/10 rounded px-4 py-3 text-white transition focus:outline-none focus:border-blue-500 focus:bg-blue-500/5"
                 placeholder="example@gmail.com"
                 onChange={(e) =>
