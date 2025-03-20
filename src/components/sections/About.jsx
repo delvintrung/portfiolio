@@ -58,7 +58,7 @@ export const About = () => {
             </div>
           </div>
 
-          <div className="grid grid-cols-1 md:grid-cols-2 gap-6 mt-8">
+          {/* <div className="grid grid-cols-1 md:grid-cols-2 gap-6 mt-8">
             <div className="p-6 rounded-xl border-white/10 border hover:-translate-y-1 transition-all">
               <h3 className="text-xl font-bold mb-4"> 🏫 Education </h3>
               <ul className="list-disc list-inside text-gray-300 space-y-2">
@@ -98,7 +98,7 @@ export const About = () => {
                 </div>
               </div>
             </div>
-          </div>
+          </div> */}
         </div>
       </RevealOnScroll>
     </section>
